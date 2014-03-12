@@ -221,7 +221,7 @@ class ResolveGitDependenciesTask extends DefaultTask {
     
     if (wrapper.exists()) {
       
-      def command = wrapperName + " install"
+      def command = wrapper.absolutePath + " install"
       
       def install = command.execute(null, destinationDir)
       
